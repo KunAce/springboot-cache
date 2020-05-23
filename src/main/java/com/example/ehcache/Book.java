@@ -7,6 +7,14 @@ public class Book implements Serializable {
     private String name;
     private String author;
 
+    @Override
+    public String toString() {
+        return "Book{id:" + id
+                + ", name:" + name
+                + ", author:" + author
+                + "}";
+    }
+
     public Integer getId() {
         return id;
     }
